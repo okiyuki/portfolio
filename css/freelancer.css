@@ -10,7 +10,7 @@ body {
   overflow-x: hidden; }
 
 p {
-  font-size: 20px; }
+  font-size: 1.125rem; }
 
 p.small {
   font-size: 16px; }
@@ -77,9 +77,9 @@ hr.star-primary:after {
   margin: 0 auto; }
 
 section {
-  padding: 100px 0; }
+  padding: 40px 0;}
   section h2 {
-    font-size: 3em;
+    font-size: 2em;
     margin: 0; }
 
 section.success {
@@ -88,7 +88,7 @@ section.success {
 
 @media (max-width: 767px) {
   section {
-    padding: 75px 0; }
+    padding: 40px 0; }
   section.first {
     padding-top: 75px; } }
 
@@ -118,7 +118,7 @@ section.success {
   #mainNav a:focus {
     outline: none; }
   #mainNav .navbar-brand {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #47D2C4; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #676f6e; }
@@ -149,7 +149,7 @@ section.success {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s; }
     #mainNav .navbar-brand {
-      font-size: 2em;
+      font-size: 1.5rem;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
@@ -167,17 +167,17 @@ section.success {
       font-size: 1.5em; } }
 
 header.masthead {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
   text-align: center;
   color: white;
   background: #47D2C4; }
   header.masthead img {
     display: block;
-    margin: 0 auto 20px; }
+    margin: 0 auto 10px; }
   header.masthead .intro-text .name {
     font-family: 'Quick Sand', 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 2.1em;
+    font-size: 3rem;
     font-weight: 500;
     display: block;
     letter-spacing: 3px; }
@@ -187,12 +187,12 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 200px;
-    padding-bottom: 100px; }
+    padding-top: 100px;
+    padding-bottom: 40px; }
     header.masthead .intro-text .name {
-      font-size: 4.75em; }
+      font-size: 3rem; }
     header.masthead .intro-text .skills {
-      font-size: 1.75em; } }
+      font-size: 1.25rem; } }
 
 #portfolio .portfolio-item {
   right: 0;
@@ -347,12 +347,12 @@ form .row:first-child .floating-label-form-group {
 footer {
   color: white; }
   footer h3 {
-    margin-bottom: 30px; }
+    margin-bottom: 0.75rem; }
   footer .footer-above {
     padding-top: 50px;
     background-color: #47D2C4; }
-  footer .footer-col {
-    margin-bottom: 50px; }
+  /* footer .footer-col {
+    margin-bottom: 2.5rem; } */
   footer .footer-below {
     padding: 25px 0;
     background-color: #47D2C4; }
@@ -461,3 +461,15 @@ footer {
   outline: none; }
 
 .border { border: 5px solid #5a5858; }
+
+.content-margin{
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+#portfolio * {
+  z-index: 2; }
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px; } }
